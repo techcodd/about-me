@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <title>My todo App</title>
+  </head>
+  <body>
+    <input id="todo-title"  type="text" />
+    <input id="date picker" type="date" />
+    <button onclick="addTodo()">Add Todo</button>
+
+    <div id="todo-list"></div>
+
+  <script>
+  const todos = ('Travel' , 'Shopping');
+
+    render(); 
+
+    function addTodo() {
+      const textbox = document.getElementById('todo-title');
+      const title =textbox.value;
+      todos.push(title);
+      
+    const datePicker = document.getElementById('date-picker');
+    const dueDate =datePicker.value;
+    todos.push(title);
+
+      render();
+    }
+  
+todos.forEach(function (todoTitle) {
+  const element = document.createElement('div'); 
+element.innerText = todoTitle;
+document.body.appendChild(element);
+});
+
+render();
+
+function addTodo() {
+  todos.push('new todo')
+}
+    render(); 
+
+function addTodo() {
+  const textobox = document.getElementById('todo-title');
+  const title = textbox.value;
+  todos.push('title'); 
+}
+
+render();
+
+
+todos.forEach(function (todoTitle) {
+  const element = document.createElement('div'); 
+element.innerText = todoTitle;
+document.body.appendChild(element);
+});
+
+render();
+
+function render() {
+  // reset out list
+  document.getElementById('todo-list').innerHTML = '';
+
+  todos.forEach(function (todoTitle) {
+    const element = document.createElement('div'); 
+element.innerText = todoTitle;
+const todoList=document.getElementById();
+todo-list.appendChild(element);
+});
+
+  function addTodo() {
+    const textbox = document.getElementById('todo-title');
+    const title = textbox.value;
+  todos.push('title'); 
+}};
+
+
+  </script>
+  </body>
+</html>
+
